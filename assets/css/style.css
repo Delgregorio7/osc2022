@@ -5104,7 +5104,10 @@ ul.dropdown-menu > li.has-dropdown > a:before {
   overflow: hidden;
 }
 .blog-entry .entry--meta {
+  color: #616161;
+  font-family: 'Droid Serif', serif;
   font-size: 13px;
+  font-style: italic;
   line-height: 26px;
   margin-bottom: 5px;
 }
