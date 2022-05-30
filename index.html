@@ -44,6 +44,53 @@
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+<style>
+	.slider-fit {
+		height: auto !important;
+	}
+	.slider-fit .owl-next, .slider-fit .owl-prev {
+		background-color : #5555 !important;
+	}
+	.slider-fit .owl-prev {
+		left: -60px !important;
+	}
+	.slider-fit .owl-next {
+		right: -60px !important;
+	}
+	@media only screen and (max-width:768px){
+		.slider-fit .owl-prev {
+			left: -20px !important;
+		}
+		.slider-fit .owl-next {
+			right: -20px !important;
+		}
+	}
+	.grid .blog-entry {
+		height: 380px;
+		position: relative;
+		padding-top: 254px;
+	}
+	.grid .blog-entry h2 {
+		font-size: 24px;
+	}
+	.grid .blog-entry .meta {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 2;
+		background: #fff;
+		padding: 20px;
+	}
+	/* css 2020 */
+	@media (max-width: 480px) {
+		.bgsection2 {
+			background: none !important; 
+		}
+	}
+	</style>
+
+</style>
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 <!--[if lt IE 9]>
@@ -53,7 +100,7 @@
 
 <!-- Document Title
     ============================================= -->
-<title>Beasiswa Universitas dan Perguruan Tinggi di Indonesia | OSC Medcom 2019</title>
+<title>Beasiswa Universitas dan Perguruan Tinggi di Indonesia | OSC Medcom 2022</title>
 </head>
 <body>
 <!-- Document Wrapper
@@ -98,7 +145,7 @@
 						<a href="https://tryout.medcom.id/tryout/dashboard" class="menu-item">tryout soal</a>
 					</li>
 					<li >
-						<a href="https://osc.medcom.id/alumni" class="menu-item">Alumni</a>
+						<a href="alumni.html" class="menu-item">Alumni</a>
 					</li>	
 					<!--<li >
 						<a href="https://osc.medcom.id/tutorial" class="menu-item">tutorial soal</a>
@@ -496,8 +543,6 @@
 				
 			</div><!-- .row end -->
 		</section>
-		
-	</section>
 	
 	<!-- Berita Community END -->
 	<!-- banner #3
@@ -1226,6 +1271,45 @@
 			</div><!-- .container end -->
 		</div><!-- .footer-copyright end -->
 	</footer>
+<!--start GA-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-88206039-1']);
+	_gaq.push(['_trackPageview']); 
+	_gaq.push(['K._setAccount','UA-88568416-21']); 
+	_gaq.push(['K._trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--end GA-->
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"f2/4q154He20NE", domain:"medcom.id",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=f2/4q154He20NE" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '755240764946029');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=755240764946029&ev=PageView&noscript=1'/></noscript>
+
+<!-- End Facebook Pixel Code -->		
 	
  </div><!-- #wrapper end -->
 
