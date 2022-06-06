@@ -1737,7 +1737,7 @@ ul.dot-list li i {
 }
 
 .page-title .title {
-  padding: 20px 0 20px;
+  padding: 319px 0 219px;
   
 
 }
@@ -3001,7 +3001,7 @@ c .cart-total .total-price {
 .navbar-nav > li > a:focus,
 .navbar-nav > li > a:hover {
   background-color: transparent;
-  color: #ffffff;
+  color: #3477a6;
 }
 /* Menu Level #1 */
 .navbar-nav > li > .menu-item:before {
@@ -9424,6 +9424,18 @@ body:not(.device-touch) .clients-grid li a {
 
 .vid-header {position:absolute; width:100%; height:100%; top: 0; left:0}
 .h100 {width:100%; position:relative; float:left; height:0; padding-top:56.25%}
+
+/* css tambahan */
+.banner970 {width:970px; height:90px; margin:20px auto; text-align:center;}
+.yutub {width:800px; height:450px; text-align:center}
+@media only screen and (min-width: 320px) and (max-width: 1080px) {
+.header-banner {width:100%; height:100%; margin:20px auto; text-align:center;}	
+  .yutub {
+    width:100%;
+	height:100%;
+  }
+  .banner970 {width:100%; height:auto;}
+}
 
 @media only screen and (max-width:768px){
 	.inline_campus{width: 1500px !important;}
