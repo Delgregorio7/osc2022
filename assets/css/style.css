@@ -268,22 +268,22 @@ ul {
   margin-bottom: 10px;
 }
 section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   overflow: hidden;
 }
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 /* All margin */
@@ -587,8 +587,8 @@ section {
 }
 @media only screen and (max-width: 767px) {
   section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .text-center-xs {
     text-align: center !important;
@@ -1118,7 +1118,7 @@ blockquot {
   font-family: fontawesome;
 }
 .breadcrumb > li a:hover {
-  color: #0e76bc;
+  color: #e1e1e1;
 }
 /*------------------------------------*\
     #BUTTONS
@@ -3633,7 +3633,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
   ul.dropdown-menu li a,
   ul.mega-menu li ul li a {
     line-height: 40px;
-    color: #7f7f7f;
+    color: #fff;
     padding: 0;
     border-bottom: 1px solid #f3f3f3;
     display: block;
@@ -3665,7 +3665,7 @@ ul.dropdown-menu > li.has-dropdown > a:before {
   ul.mega-menu li a:focus,
   ul.mega-menu li a:hover {
     background-color: transparent;
-    color: #0e76bc;
+    color: #fff;
     padding: 0 0 0 20px;
   }
   ul.dropdown-menu.left {
@@ -5451,7 +5451,7 @@ ul.comments-list ul.comment-children ul .comment-body .comment {
   margin-bottom: 30px;
 }
 .blog-carousel {
-  padding-bottom: 87px;
+  padding-bottom: 2px;
 }
 .blog-carousel .carousel-dots .owl-controls {
   margin-top: 25px;
@@ -7038,8 +7038,8 @@ width:70px; height:50px; overflow:hidden;
     #Client
 \*------------------------------------*/
 .clients {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .client img {
   max-width: 100%;
@@ -9408,6 +9408,7 @@ body:not(.device-touch) .clients-grid li a {
 }
 
 
+
 /*custom*/
 .grid .blog-entry{height: 380px; position: relative; padding-top: 254px;}
 .grid .blog-entry .entry--img{position: absolute; top: 0; left: 0; width: 100%;}
@@ -9447,8 +9448,28 @@ body:not(.device-touch) .clients-grid li a {
 /* css 2020 */
 .bgsection2 {background:url(../images/bg-section3.jpg) left top no-repeat fixed; background-size:contain }
 
-
-
-
-
-
+/* css 2022 */
+/* bootstrap dropdown hover menu*/
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 260px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+    margin-top: 2px;
+  list-style: none;
+  font-size: 14px;
+  background-color: #3477a6;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+}
