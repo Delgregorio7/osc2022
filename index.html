@@ -102,43 +102,30 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
 				<ul class="nav navbar-nav nav-pos-right navbar-left">
-					<!--<li>
-						<a href="https://forms.gle/TPzHsU1XNvjUZZRUA" target="_blank" class="btn btn--primary" style="min-width:170px !important;width:100%;line-height: 45px;margin-top: 20px;color:#37e2e2;padding: 0 15px;">Survey OSC</a>
-					</li>-->
-																									<li class="active">
+					<li class="active">
 						<a href="https://delgregorio7.github.io/osc2022/" class="menu-item">home</a>
 					</li>
-					<li >
-						<a href="https://osc.medcom.id/tentang" class="menu-item">tentang osc</a>
-					</li>
-					<li >
-						<a href="https://osc.medcom.id/pasca" class="menu-item">pasca sarjana</a>
-					</li>
-					<li >
-						<a href="https://osc.medcom.id/community" class="menu-item">komunitas</a>
-					</li>
-					<li >
-						<a href="jaringan.html" class="menu-item">jaringan</a>
+					<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">About OSC<b class="caret"></b></a>
+						  <ul class="dropdown-menu">
+								<li><a href="#">Master Degree</a></li>
+								<li><a href="#">Post Graduated</a></li>
+						  </ul>
 					</li>
 					<li>
-						<a href="https://tryout.medcom.id/tryout/dashboard" class="menu-item">tryout soal</a>
+						<a href="https://osc.medcom.id/community" class="menu-item">Community</a>
+					</li>
+					<li>
+						<a href="jaringan.html" class="menu-item">Corporate</a>
 					</li>
 					<li >
-						<a href="alumni.html" class="menu-item">Alumni</a>
-					</li>	
-					<!--<li >
-						<a href="https://osc.medcom.id/tutorial" class="menu-item">tutorial soal</a>
-					</li>-->
-					<li >
 						<a href="https://osc.medcom.id/faq" class="menu-item">FAQ</a>
-					</li>			
-							
-									
-										<li role="tab" aria-controls="signin">
+					</li>				
+					<li role="tab" aria-controls="signin">
 						<!--<a href="/login?signin" class="menu-item">login</a>-->
 						<a href="https://osc.medcom.id/login" class="menu-item">login</a>
 					</li>
-									</ul>	
+				</ul>	
 			</div>
 			<!-- .navbar-collapse -->
 			</div>
@@ -317,82 +304,60 @@
 				
 				<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
 					<div class="heading heading-2 text--center mb-60">
-						<h2 class="heading--title">PTS Pendukung OSC</h2>
+						<h2 class="heading--title">Kampus Mitra OSC</h2>
 						<div class="divider--line">
 							<i class="divider divider--1"></i>
 							<i class="divider divider--2"></i>
 							<i class="divider divider--3"></i>
 							<i class="divider divider--4"></i>
 						</div>
-						<p class="heading--desc">Dapatkan Beasiswa dari 25 PTS terbaik di Indonesia</p>
+						<p class="heading--desc">Dapatkan Beasiswa dari 25 Kampus terbaik di Indonesia</p>
 					</div>
 				</div><!-- .col-md-8 end -->
 			</div>
-			<div class="col-md-6 ">
-					<div class="col-xs-12 col-sm-12 col-md-11 ">
-						<label for="jenis-sekolah"><i class="fas fa-sort-amount-down"></i>&nbsp; Sort by :</label>
-						<input type="hidden" name="registration[asal_sekolah]" value="" disabled />
-						<div class="custom-select">
-						  <select id="jenis-sekolah" name="registration[asal_sekolah]" required>
-							<option value="" style="color:#b2b2b2;">Pilih kategori</option>
-							<option value="1">Kota Universitas</option>
-							<option value="2">Provinsi Universitas</option>
-							<option value="3">Universitas S1</option>
-							<option value="4">Universitas S2</option>
-						  </select>
-						</div>												
+			<div class="container clearfix">
+				<label for="jenis-sekolah"><i class="fas fa-sort-amount-down"></i>&nbsp; Sort by :</label>
+				<div class="widget widget-tags top-margin">
+					<div class="widget--content">
+						<a href="#">Kota Universitas</a>
+						<a href="#">Kampus S1</a>
+						<a href="#">Kampus S2</a>
+						<a href="#">Akreditasi A</a>
+						<a href="#">Akreditasi B</a>
 					</div>
-				</div>
-				<div class="col-md-6 ">
-					<div class="col-xs-12 col-sm-12 col-md-11 ">
-						<label for="jenis-sekolah"><i class="fas fa-sort-amount-down"></i>&nbsp; Akreditasi Institusi :</label>
-						<input type="hidden" name="registration[asal_sekolah]" value="" disabled />
-						<div class="custom-select">
-						  <select id="jenis-sekolah" name="registration[asal_sekolah]" required>
-							<option value="" style="color:#b2b2b2;">Pilih Akreditasi</option>
-							<option value="3">Akreditasi A</option>
-							<option value="4">Akreditasi B</option>
-						  </select>
-						</div>												
-					</div>
-				</div>
-					<ul class=" clients-grid grid-8 inline_mob nobottommargin clearfix">
-						<div class="inline_campus">
-							<li><a href="profil-umb.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-mercu.jpg"/></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-trisakti.jpg"/></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-esa-unggul.jpg"/></a></li>
-							<li><a href="profil-ppm.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-ppm.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-umn.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-upj.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-unpres.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-itenas.jpg" alt="Clients"></a></li>
-						</div>	
-					</ul>
-					<ul class=" clients-grid grid-8 inline_mob nobottommargin clearfix">
-						<div class="inline_campus">
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-umara.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-telkom.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-telkom-purwokerto.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-unisbank.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-uksw.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-ukdw.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-uajy.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-uniga.jpg" alt="Clients"></a></li>
-						</div>	
-					</ul>	
-					<ul class=" clients-grid grid-10 inline_mob nobottommargin clearfix">
-						<div class="inline_campus">
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-unisma.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-untag.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-ciputra.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-ukwms.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-unusa.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-unifa.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-umi.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-umsu.jpg" alt="Clients"></a></li>
-							<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-ubl.jpg" alt="Clients"></a></li>
-						</div>	
-					</ul>	
+				</div>	
+			</div>
+			<div class="col_full top-margin">
+				<ul class=" clients-grid grid-8 inline_mob nobottommargin clearfix">
+					<div class="inline_campus">
+						<li><a href="profil-umb.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-mercu.jpg"/></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-trisakti.jpg"/></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-esa-unggul.jpg"/></a></li>
+						<li><a href="profil-ppm.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-ppm.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-umn.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-upj.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-unpres.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-itenas.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-umara.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-telkom.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-telkom-purwokerto.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-unisbank.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-uksw.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-ukdw.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-uajy.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-uniga.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-unisma.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-untag.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-ciputra.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-ukwms.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-unusa.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-unifa.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-umi.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-umsu.jpg" alt="Clients"></a></li>
+						<li><a href="profil-maranatha.html"><img src="https://va.medcom.id/site/osc2018/images/logo/logo-kampus-ubl.jpg" alt="Clients"></a></li>
+					</div>	
+				</ul>	
+			</div>
 	</div><!-- .container end -->
 	</section><!-- #Daftar Kampus end -->
 	<!-- banner #2
@@ -639,59 +604,7 @@
 								</div>
 							</div>	
 						</div>		
-					</div><!-- .blog-entry end -->
-				
-				</div><!-- .carousel end -->
-				<!-- button more-->
-				<div class="container mb-30">
-					<div class="row">
-						<div class="col-md-12 col-sm-12 col-md-2 col-md-offset-5 text-center" style="margin-top:50px;">
-								<a class="btn btn--primary btn--rounded btn--block" href="https://www.medcom.id/">More</a>
-						</div>
-					</div>
-				</div>
-				<!--button more end-->
-			</div><!-- .col-md-12 end -->
-				
-			</div><!-- .row end -->
-		</section>	
-		<!-- Artikel Medcom End -->
-		<!-- banner #3
-	============================================= -->
-	<section>
-		<div class="container">
-			
-			<div class="row">
-				<div class="text--center col_full banner970">
-					<a href="#" target="_blank"><img class="banner970" src="assets/images/banners/banner-970-2.jpg" alt="banner" /></a>
-				</div>
-			</div>
-			
-			<!-- .row end -->
-		</div>
-		<!-- .container end -->
-	</section>
-	<!-- #banner end -->
-		<!-- Video Medcom.id 
-	============================================= -->
-	<section id="number1" class="number number-1 bg-white">
-		<div class="container">
-			<div class="row clearfix">
-				<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-					<div class="heading heading-2 text--center mb-40">
-						<p class="heading--subtitle">Ikuti Update Video Medcom.id Terbaru disini</p>
-						<h2 class="heading--title">Video Medcom.id Terbaru</h2>
-						<div class="divider--line">
-							<i class="divider divider--1"></i>
-							<i class="divider divider--2"></i>
-							<i class="divider divider--3"></i>
-							<i class="divider divider--4"></i>
-						</div>
-					</div>
-				</div><!-- .col-md-8 end -->
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12">
+					</div><!-- .Berita end  -->
 					<!-- Video #1 -->
 					<div class="col-xs-12 col-sm-4 col-md-3 mb-10 grid">
 						<div class="number-panel">
@@ -750,7 +663,6 @@
 							</div>	
 						</div>	
 					</div><!-- .Video end -->
-					
 					<!-- Video #1 -->
 					<div class="col-xs-12 col-sm-4 col-md-3 mb-10 grid">
 						<div class="number-panel">
@@ -780,7 +692,6 @@
 							</div>	
 						</div>	
 					</div><!-- .Video end -->
-					
 					<!-- Video #1 -->
 					<div class="col-xs-12 col-sm-4 col-md-3 mb-10 grid">
 						<div class="number-panel">
@@ -816,7 +727,7 @@
 				<div class="container mb-30">
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-md-2 col-md-offset-5 text-center" style="margin-top:50px;">
-								<a class="btn btn--primary btn--rounded btn--block" href="https://video.medcom.id/">More</a>
+								<a class="btn btn--primary btn--rounded btn--block" href="https://www.medcom.id/">More</a>
 						</div>
 					</div>
 				</div>
@@ -825,7 +736,7 @@
 				
 			</div><!-- .row end -->
 		</section>	
-		<!-- Berita Media Group End -->
+		<!-- Artikel Medcom End -->
 		<!-- banner #4
 		============================================= -->
 		<section>
@@ -1313,6 +1224,12 @@ $('.slider-nav').slick({
   focusOnSelect: true
 });
 	
+});
+
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 });
 </script>
 </body>
