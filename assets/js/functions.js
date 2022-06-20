@@ -26,6 +26,8 @@
 	23.	TYPED SCRIPT
 	24.	FLICKR STREAM
 	25.	WOW ANIMATED
+	26. COUNTERS
+	27. SLIDERS
 */
 (function($) {
     "use strict";
@@ -103,9 +105,9 @@
 
     /* ------------------  COUNTER UP ------------------ */
 
-    $(".counting").counterUp({
+    $(".counting").counterUp ({
         delay: 10,
-        time: 1000
+        time: 6000
     });
 
     /* ------------------ COUNTDOWN DATE ------------------ */
@@ -543,6 +545,113 @@
 			});
 		});
 	}
+	 /* ------------------  COUNTERS ------------------ */
 	
+	//SINGLE VALUE
+
+	jQuery({ Counter: 0 }).animate(
+	  { Counter: $(".Single").text() },
+	  {
+		duration: 1000,
+		step: function () {
+		  $(".Single").text(Math.ceil(this.Counter));
+		}
+	  }
+	);
+
+	//SEVERAL VALUES
+
+	$(".Count").each(function () {
+	  jQuery({ Counter: 0 }).animate(
+		{ Counter: $(this).text() },
+		{
+		  duration: 1000,
+		  step: function () {
+			$(this).text(Math.ceil(this.Counter));
+		  }
+		}
+	  );
+	});
+
+	jQuery({ Counter: 0 }).animate(
+	  { Counter: $(".count").text() },
+	  {
+		duration: 6000,
+		step: function () {
+		  $(".count").text(Math.ceil(this.Counter));
+		}
+	  }
+	);
+	jQuery({ Counter: 0 }).animate(
+	  { Counter: $(".count2").text() },
+	  {
+		duration: 6000,
+		step: function () {
+		  $(".count2").text(Math.ceil(this.Counter));
+		}
+	  }
+	);
+	jQuery({ Counter: 0 }).animate(
+	  { Counter: $(".count3").text() },
+	  {
+		duration: 2000,
+		step: function () {
+		  $(".count3").text(Math.ceil(this.Counter));
+		}
+	  }
+	);
+	jQuery({ Counter: 0 }).animate(
+	  { Counter: $(".count4").text() },
+	  {
+		duration: 6000,
+		step: function () {
+		  $(".count4").text(Math.ceil(this.Counter));
+		}
+	  }
+	);
+
+	//SEVERAL VALUES
+
+	$(".Count").each(function () {
+	  jQuery({ Counter: 0 }).animate(
+		{ Counter: $(this).text() },
+		{
+		  duration: 4000,
+		  step: function () {
+			$(this).text(Math.ceil(this.Counter));
+		  }
+		}
+	  );
+	});
 	
+	/* ------------------  SLIDERS ------------------ */
+	
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	// Next/previous controls
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	// Thumbnail image controls
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}	
 }(jQuery));
